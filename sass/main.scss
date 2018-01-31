@@ -363,38 +363,12 @@ Navigation
 }
 
 .logo-place {
-    width: 170px;
-    height: 75px;
+    width: 143px;
+    height: 65px;
     float: left;
-    margin-top: 18px;
+    margin-top: 15px;
     margin-left: 20px;
-    .logo-blue {
-        display: none;
-        opacity: 1;
-        transition: all 0.3s linear;
-        .st0 {
-            fill: #4DBED6;
-        }
-        .st1 {
-            fill: #8C9E9F;
-        }
-        .st2 {
-            fill: #4DBFD6;
-        }
-        .st3 {
-            fill: url(#SVGID_1_);
-        }
-    }
-    .logo-white {
-        opacity: 1;
-        transition: all 0.2s linear;
-        .st0 {
-            fill: #FFFFFF;
-        }
-        .st1 {
-            fill: url(#SVGID_1_);
-        }
-    }
+    background: url('/img/logo3_142x64px.png') no-repeat;
 }
 
 .slider-space {
@@ -432,7 +406,10 @@ Navigation
     color: #fff;
     font-size: 13px;
 }
-
+.btn-centered {
+    margin: 0 auto!important;
+    display: block !important;
+}
 .footer-inner-left {
     float: left;
     width: 45%;

@@ -1,0 +1,100 @@
+.nurse-top-section {
+    display: flex;
+    justify-content: space-between;
+    .right-block {
+        width: 430px;
+        padding-top: 80px;
+        p {
+            padding: 6px 0 44px;
+            text-align: right
+        }
+    }
+    a {
+        float: right
+    }
+    .headings {
+        text-align: right
+    }
+     
+    .graphic-layer .img-1 {
+        height: 390px;
+    }
+     
+}
+.decoration-elems {
+    position: relative;
+    margin-top: 61px;
+    .vertical-lines{
+        width: 2px;
+        height: 78px;
+        margin: 0 auto;
+        background-color: #b3e5f0;
+    }
+    img {
+        width: 49px;
+        height: 60px;
+        margin:25px auto 25px;
+    }
+}
+.benefits-section.what-is-yournurses .description{
+    padding-bottom: 67px;
+}
+.benefit-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    .box {
+        max-width: 370px;
+        text-align: center;
+        h4 {
+            padding-bottom: 22px;
+        }
+    }
+}
+.how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 55px;
+    .step {
+        display: flex;
+        width: 100%;
+        min-height: 468px;
+        margin-bottom: -73px;
+        justify-content: space-between;
+        .text-block {
+            padding-top: 180px;
+        }
+        .circles {
+            margin: 0;
+            height: 468px;
+            width: 468px;
+            .img1 { 
+                width: 468px;
+                height: 468px;
+            }
+            .img2 { 
+                width: 396px;
+                height: 396px;
+                left: 35px;
+                top: 35px;
+            }
+            .img3{ 
+                width: 336px;
+                height: 336px;
+                top: 68px;
+                left: 66px;
+                background: #37a8d4
+            }
+            .cover {
+                position: absolute;
+                left: 65px;
+            }
+        }
+    }
+    .step:nth-child(even){
+        .text-block {
+            text-align: right
+        }
+    }
+}
