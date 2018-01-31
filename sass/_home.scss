@@ -1,0 +1,192 @@
+.section-banner {
+    background-color: #ebf7fa;
+    padding-top: 81px;
+    padding-bottom: 51px;
+    .headings {
+        font-family: 'Roboto Bold Condensed';
+        font-size: 64px;
+        color: #38bbd7
+    }
+    p {
+        color: #38bbd7;
+        font-size: 24px;
+        font-family: 'roboto-condensed', sans-serif;
+        text-align: center;
+        line-height: 29px;
+        padding: 0 20px 54px;
+    }
+    .graphic-layer {
+        display: flex;
+        .img-1 {
+            height: 270px
+        }
+        .img-2 {
+            height: 285px;
+            margin-top: 6px;
+        }
+        .central-section {
+            text-align: center
+        }
+    }
+    .title-place {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 56px;
+    }
+}
+
+.gradiented-btn {
+    background-image: -moz-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
+    background-image: linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    width: 260px;
+    height: 46px;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+    line-height: 45px;
+    font-family: 'roboto-condensed', sans-serif;
+}
+
+.how-it-works-subsection {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 77px;
+    padding-bottom: 65px;
+    width: 770px;
+    margin: 0 auto;
+    .block {
+        width: 370px;
+        h4 {
+            padding-top: 33px;
+            padding-bottom: 21px;
+        }
+    }
+}
+
+.element3 {
+    width: 95px;
+    margin: 0 auto
+}
+
+.element4 {
+    width: 186px;
+    margin: 0 auto;
+    padding-top: 21px;
+}
+
+.what-is-yournurses {
+    padding-top: 75px;
+    padding-bottom: 104px;
+    .horizontal-element {
+        background-image: url(/img/line-horizontal.png);
+        width: 970px;
+        height: 2px;
+        margin: 80px auto 75px
+    }
+    .vertical-element {
+        background-image: url(/img/line-vertical.png);
+        position: absolute;
+        width: 2px;
+        height: 180px;
+        left: 50%;
+        top: 22px;
+        margin-left: -2px;
+    }
+    .description {
+        color: #8d9fa0;
+        max-width: 970px;
+        text-align: center;
+        font-size: 22px;
+        font-family: 'roboto-condensed';
+        margin: 0 auto;
+        line-height: 36px;
+        padding-top: 67px;
+        padding-bottom: 88px;
+    }
+    .boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .box {
+            width: 370px;
+            text-align: center;
+            p,
+            a {
+                font-size: 20px;
+                font-family: 'roboto-condensed';
+            }
+            p {
+                color: #8d9fa0;
+                line-height: 30px;
+            }
+            a {
+                color: #38bbd7
+            }
+            h4 {
+                padding-top: 13px;
+                padding-bottom: 21px;
+            }
+        }
+    }
+}
+
+.choices {
+    text-align: center
+}
+
+.heading-mediaum {
+    color: #38bbd7;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Roboto Bold Condensed";
+}
+
+.circles {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    .img1,
+    .img2,
+    .img3 {
+        position: absolute;
+        border-radius: 50%;
+    }
+    .img1 {
+        background: #f5fbfd;
+        width: 210px;
+        height: 210px;
+    }
+    .img2 {
+        background: #e2f2f9;
+        width: 180px;
+        height: 180px;
+        top: 16px;
+        left: 16px;
+    }
+    .img3 {
+        width: 140px;
+        height: 140px;
+        top: 36px;
+        left: 36px;
+        background: url(/img/guy.svg);
+        background-color: #a0d2e0;
+        background-position: -13px 18px;
+        background-repeat: no-repeat;
+        background-size: 161%;
+    }
+    .img3.girl {
+        background-image: url(/img/girl.svg);
+        background-size: 73%;
+        background-position: 0px 16px;
+    }
+}
