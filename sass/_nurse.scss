@@ -98,3 +98,90 @@
         }
     }
 }
+.why-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 970px;
+    margin: 0 auto;
+    padding-top: 108px;
+    >div:last-child {
+        padding-bottom: 0;
+    }
+}
+.why-box {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 84px;
+    .text-place {
+        max-width: 784px;
+        .heading-mediaum {
+            font-family: 'roboto-condensed', sans-serif;
+            text-transform: none;
+            padding-bottom: 11px;
+        }
+    }
+    .counter{
+        width: 74px;
+        height: 74px;
+        color: #38bbd7;
+        background: #ebf8fb;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: text-bottom;
+        font-size: 22px;
+        font-family: "Roboto Bold Condensed";
+        line-height: 74px;
+    }
+}
+ 
+.nurse-pricing-container {
+    max-width: 970px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 68px;
+}
+#price-table th {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    text-align: center;  
+}
+
+
+#price-table {
+    margin-top: 72px
+}
+table {
+    font-family: 'roboto-condensed', sans-serif;
+    width: 100%;
+    border-collapse:separate;
+    border: solid #ebebeb 2px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #8d9fa0;
+}
+thead {
+    th {
+        color: #38bbd7
+    }
+}
+td, th {
+    border-left:solid #ebebeb 2px;
+    border-top:solid #ebebeb 2px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+
+th { 
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
