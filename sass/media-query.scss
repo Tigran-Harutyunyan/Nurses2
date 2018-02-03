@@ -1,434 +1,302 @@
-    @media only screen and (max-width: 800px) {
-        .download-section {
-            .left-section .buttons {
-                margin-right: auto;
-            }
-            .right-section .buttons {
-                margin-left: auto;
-            }
-        }
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .download-section {
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-flex-direction: column;
-            -moz-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            flex-direction: column;
-            .left-section,
-            .right-section {
-                // width: 258px
-            }
-            .left-section .buttons {
-                float: left;
-                margin-right: auto;
-                margin-left: 0;
-            }
-            .right-section .buttons {
-                margin-left: auto;
-            }
-        }
-    }
-    
-    @media only screen and (min-width: 1175px) and (max-width: 1265px) {
-        .footer .footer-inner {
-            width: 1115px
-        }
-    }
-    
-    @media only screen and (min-width: 1000px) and (max-width: 1174px) {
-        .footer .footer-inner {
-            width: 926px
-        }
-    }
-    
-    @media only screen and (min-width:890px) and (max-width: 999px) {
-        .footer .footer-inner {
-            width: 870px
-        }
-    }
-    
-    @media only screen and (min-width:840px) and (max-width: 889px) {
-        .footer {
-            .footer-inner {
-                width: 795px
-            }
-        }
-    }
-    
-    @media only screen and (max-width: 890px) {
-        .footer-logo1 {
-            display: block;
-            float: none;
-            clear: both;
-            margin: 0 auto;
-        }
-        .footer-logo2 {
+@media only screen and (max-width: 1260px) {
+    .how-it-works {
+        .decor {
             display: none
         }
-        .footer {
-            .footer-inner {
-                width: 100%
-            }
-            .info-block {
-                width: 100%;
-                margin-bottom: 0;
-                margin-top: 20px;
-                p {
-                    width: 53%;
-                    text-align: center;
-                    margin: 0 auto;
-                }
-                .links {
-                    text-align: center;
-                }
-            }
-            .for-providers {
-                float: left;
-                margin-left: 0px;
-            }
-            .for-nurses {
-                float: left;
-            }
-            .download-buttons-section {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                width: 100%;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                margin-bottom: 14px;
-                .buttons:last-child {
-                    margin-right: 0;
-                }
-                .buttons {
-                    margin-top: 2px;
-                }
-            }
+        .step:nth-child(even) .text-block {
+            margin-left: 30px
         }
-        .form-container {
-            max-width: 830px;
-            margin: 0 auto;
-            width: 91%;
+        .step:nth-child(odd) .text-block {
+            margin-right: 30px
         }
-        .map-container {
-            width: 91%;
+        .step .text-block {
+            max-width: 230px
         }
     }
-    
-    @media only screen and (max-width: 725px) {
-        .info-place-container .title-place h5 {
-            width: 95%;
-            margin: 0 auto;
+}
+
+@media only screen and (max-width: 1220px) {
+    .footer .footer-inner {
+        width: 100%;
+        padding: 37px 30px
+    }
+    .inner-container {
+        width: 100%;
+    }
+    .benefits-section.what-is-yournurses .description {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .benefit-boxes {
+        .box {
+            max-width: 27%;
         }
     }
-    
-    @media only screen and (max-width: 960px) {
-        .map-container,
-        .form-container {
-            width: 90%;
-        }
+}
+
+@media only screen and (max-width: 1080px) {
+    .what-is-yournurses .horizontal-element {
+        background-image: url(/img/line-horizontal-780.png);
+        width: 708px;
     }
-    
-    @media only screen and (max-width: 650px) {
-        .contact-form-right label.error {
-            right: 0
-        }
-        .rem1 {
-            display: none;
-        }
-        .rem2 {
-            display: block;
-            margin-bottom: 27px;
-            text-align: center;
-        }
-        .map-container {
-            width: 88%;
-            margin: 0 auto 33px;
-            .map-830 {
-                display: none
-            }
-            .map-470 {
-                display: block;
-                max-width: 470px;
-            }
-        }
-        .social-icons {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            text-align: center;
-            float: none;
-            padding-top: 39px;
-            margin: 0 auto;
-            width: 132px;
-            a:last:child {
-                margin-right: 0;
-            }
-            a {
-                margin-right: 20px !important
-            }
-        }
-        .contact-section-container {
-            padding-bottom: 41px;
-        }
-        .footer {
-            .info-block {
-                margin-top: 16px;
-                p {
-                    width: 75%
-                }
-            }
-        }
-        .contact-form-right {
-            margin-top: 0 !important
-        }
-        ;
-        .form-container {
-            width: 88%;
-            .contact-form-left,
-            .contact-form-right {
-                width: 100%;
-                padding-right: 0;
-                margin-top: 15px;
-            }
-        }
+    .why-container {
+        padding: 108px 30px 0;
     }
-    
-    @media only screen and (max-width: 360px) {
-        .google-link-popup {
-            margin-top: 16px;
-        }
+    .nurse-pricing-container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    
-    @media only screen and (max-width: 835px) {
-        .how-it-works-section-768 {
-            display: block;
-        }
-        .how-it-works-section {
-            display: none
-        }
+}
+
+@media only screen and (max-width: 1050px) {
+    .db2 {
+        display: none;
     }
-    
-    @media only screen and (max-width: 1100px) {
-        #scroller {
-            display: none !important
-        }
-        .info-place-container > p {
-            width: 89%;
-            max-width: none
-        }
-        .how-it-works-section {
-            .diagram-place {
-                margin-right: 25px;
-            }
-            .how-to-works-list {
-                width: 35%;
-            }
-        }
-        /*  .how-it-works-container .title-place h5 {
-           font-size: 20px
-       } */
+    .db1 {
+        display: block;
+        margin-left: auto;
     }
-    
-    @media only screen and (max-width: 690px) {
-        .j-header-transparent.j-header-hide.j-header-show .logo-place,
-        .j-header-transparent.j-header-show.j-header-show .logo-place {
-            background-position: -906px 192px !important;
-        }
-        .logo-place .logo-white {
-            background-size: 34%;
-        }
-        .remodal-wrapper {
-            bottom: -481px
-        }
-        .remodal.video-modal {
+    .footer .info-block {
+        width: 100%;
+        padding-top: 4px;
+        display: flex;
+    }
+    .footer-inner {
+        flex-wrap: wrap;
+        padding-bottom: 39px;
+        .footer-right {
             width: 100%
         }
-        .video-container {
-            width: 100% !important;
+        .copyright {
+            text-align: center !important;
+            width: 450px;
+            margin: 0 auto;
+            padding-top: 28px !important;
         }
-        .my-video-dimensions {
-            width: 100%;
-            height: auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .normal-paragraph {
+        font-size: 18px
+    }
+    .how-it-works {
+        .step {
+            margin-bottom: 0;
         }
-        .responsive-video {
-            max-width: 100%
+        .step:nth-child(odd) .text-block {
+            margin-right: 0;
         }
-        .remodal.video-modal {
-            width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            padding-bottom: 0;
+        .step:nth-child(odd) .text-block {
+            padding-left: 0;
         }
-        .nav {
-            display: none !important
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .decoration-elems {
+        display: none;
+    }
+    .nurse-top-section .headings {
+        font-size: 48px;
+    }
+    .section-banner p {
+        font-size: 18px
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .what-is-yournurses {
+        .horizontal-element {
+            background-image: url(/img/line-horizontal-380.png);
+            margin: 60px auto 60px;
+            width: 307px;
         }
-        .logo-blue-mini,
-        .logo-white-mini {
-            display: block;
+        .horizontal-element.line1 {
+            margin: 29px auto 55px;
         }
-        .how-it-works-section-768 .steps {
-            font-size: 16px;
-            width: auto;
-            margin-left: 20px;
-            margin-right: 20px;
+    }
+    .nav a {
+        padding: 5px 18px 4px 18px;
+    }
+    .why-box {
+        padding-bottom: 50px;
+    }
+    .nurse-pricing-container {
+        padding-top: 28px;
+    }
+    #price-table {
+        margin-top: 41px;
+    }
+    .why-container {
+        padding: 75px 30px 0;
+        .counter {
+            width: 64px;
+            height: 64px;
+            line-height: 63px;
+            margin-right: 28px;
         }
-        .remodal {
-            border-radius: 0px;
-            .logo-popup {
-                margin-bottom: 24px;
-                margin-top: 10px;
+    }
+    .how-it-works-outer {
+        padding: 35px 35px 60px;
+    }
+    .benefit-boxes {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .box {
+            max-width: 48%;
+            margin-bottom: 40px;
+        }
+        .box:last-child {
+            margin-bottom: 0
+        }
+    }
+    .what-is-yournurses {
+        padding-top: 58px;
+        padding-bottom: 80px;
+        .description {
+            font-size: 19px;
+            line-height: 30px;
+            padding-bottom: 50px !important;
+            padding-top: 30px;
+        }
+    }
+    .heading {
+        font-size: 26px;
+    }
+    .why-container {
+        padding-bottom: 0;
+    }
+    .how-it-works .step {
+        min-height: auto;
+        .text-block {
+            padding-top: 78px;
+        }
+        .circles {
+            height: 340px;
+            width: 340px;
+            .img1 {
+                width: 340px;
+                height: 340px;
             }
-            .buttons-container {
-                -webkit-flex-direction: column;
-                -moz-flex-direction: column;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                a {
-                    margin-right: 0
-                }
-                .mac-link-popup {
-                    margin-bottom: 16px
-                }
+            .img2 {
+                width: 290px;
+                height: 290px;
+                left: 26px;
+                top: 26px;
+            }
+            .img3 {
+                width: 245px;
+                height: 245px;
+                top: 48px;
+                left: 48px;
+            }
+            .cover {
+                left: 46px;
+                width: 245px;
+                top: 0px;
             }
         }
-        .swiper-slide img.slides-1250 {
-            display: block;
-        }
-        .swiper-slide img.slides-1902 {
-            display: none
-        }
-        .slider-space,
-        .mobile-nav {
-            display: block;
-        }
-        .nav-bar {
-            height: 61px !important;
-        }
-        .logo-place {
-            margin-top: 10px;
-            width: 110px;
-            height: 50px;
-        }
-        .nav-white-bg {
-            .logo-place {
-                background-size: 30%;
-                margin-top: 10px;
-                .logo-white-mini {
-                    display: none
-                }
-            }
-            .hamburger-blue {
-                opacity: 1;
-                display: block
-            }
-            .hamburger-white {
-                opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .sidemenu {
+        display: none
+    }
+    .banner-top-text {
+        display: block
+    }
+    .nurse-top-section {
+        flex-wrap: wrap;
+        .right-block {
+            .headings,
+            p {
                 display: none
             }
         }
-        .nav-white-bg {
-            .logo-blue {
-                display:block  !important;
-                background-size: 30%;
-            }
+    }
+    .section-banner .right-block {
+        width: 100% !important;
+        text-align: center;
+        a {
+            float: none
         }
     }
-    
-    @media only screen and (max-width: 410px) {
-        .how-it-works-section-768 {
-            padding-bottom: 0
+    .graphic-layer {
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #price-table {
+        width: 320px;
+        font-size: 16px;
+        th:first-child {
+            width: 88px;
         }
-        .how-it-works-section-768 .download-btn,
-        .download-section .download-btn {
-            width: 100% !important
+        th:nth-child(2) {
+            width: 104px;
         }
-        .download-section {
-            .buttons {
-                width: 100% !important;
-            }
-            .left-section,
-            .right-section {
-                width: 100% !important
-            }
-        }
-        .how-it-works-container {
-            box-sizing: border-box;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .form-container .btn-submit {
-            width: 100%
-        }
-        .footer-logo3 {
-            display: block;
-            margin-bottom: 17px;
-        }
-        .footer-logo1,
-        .footer-logo2 {
-            display: none
-        }
-        .download-section {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .footer {
-            padding-bottom: 38px;
-            .footer-inner {
-                padding-top: 14px;
-            }
-            .info-block {
-                margin-top: 37px;
-                .links {
-                    margin-bottom: 24px;
-                }
-            }
-            .download-buttons-section {
-                margin: 0 auto;
-                -webkit-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-                .for-providers {
-                    margin-bottom: 20px
-                }
-                .buttons {
-                    width: 95%;
-                    margin-right: 0 !important;
-                }
-                .buttons:first-child {
-                    margin-bottom: 8px;
-                }
-            }
-            .for-nurses {
-                margin-left: 0
-            }
+        th {
+            padding: 13px 4px 11px;
+            vertical-align: middle;
         }
     }
-    
-    @media only screen and (min-width: 800px) and (max-width: 1000px) {
-        .download-section {
-            .left-section {
-                margin-right: 25px;
-            }
-            .right-section {
-                margin-left: 25px;
-            }
+}
+
+@media only screen and (max-width: 650px) {
+    .nurse-pricing-container {
+        text-align: center
+    }
+    .benefit-boxes .box {
+        width: 100%;
+        max-width: 100%;
+        h4 {
+            padding-bottom: 9px;
         }
     }
-    
-    @media screen and (max-width:1050px) {
-        .remodal.video-modal {
-            width: 90%
+    .what-is-yournurses .horizontal-element {
+        background-image: url(/img/line-horizontal-380.png);
+        width: 307px;
+    }
+    .how-it-works {
+        width: 340px;
+        .step {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            .text-block {
+                max-width: 340px;
+                padding-top: 19px;
+                text-align: center !important;
+                padding-bottom: 31px !important;
+            }
+        }
+        .step:nth-child(even) {
+            flex-wrap: wrap;
+            flex-direction: column;
         }
     }
+}
+
+@media only screen and (max-width: 580px) {
+    .info-block {
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .footer {
+        .info-block .links {
+            margin-left: auto;
+        }
+        .download-buttons-section {
+            margin-left: auto;
+            margin-right: auto;
+            float: none; 
+            margin-top: 26px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {}

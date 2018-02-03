@@ -1,4 +1,5 @@
 .nurse-top-section {
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     .right-block {
@@ -18,8 +19,10 @@
      
     .graphic-layer .img-1 {
         height: 390px;
-    }
-     
+    } 
+}
+.staffer-t1 {
+    width: 374px !important
 }
 .decoration-elems {
     position: relative;
@@ -51,19 +54,42 @@
         }
     }
 }
+.banner-top-text {
+    display: none;
+    text-align: center;
+    width: 100% !important;
+}
+.how-it-works-outer {
+    padding: 35px 35px 129px;
+}
 .how-it-works {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 55px;
+    justify-content: space-between; 
+    max-width: 1306px;
+    margin: 0 auto; 
+  
+    .decor {
+        background: url(/img/directions.jpg) no-repeat;
+        background-position: 0 0 ;
+        width: 150px;
+        height: 20px; 
+        margin-top: 224px;
+    }
     .step {
+        position: relative;
         display: flex;
         width: 100%;
         min-height: 468px;
         margin-bottom: -73px;
         justify-content: space-between;
         .text-block {
-            padding-top: 180px;
+            padding-top: 170px;
+            max-width: 470px;
+        }
+        .heading-mediaum {
+            text-transform: capitalize;
+            padding-bottom: 11px;
         }
         .circles {
             margin: 0;
@@ -92,9 +118,29 @@
             }
         }
     }
+   
+    .step:nth-child(odd){
+        .decor { 
+            margin-left: auto;
+        }
+        .circles {
+            margin-left: 21px;
+        }
+        .text-block { 
+            padding-left: 36px
+        }
+    }
     .step:nth-child(even){
         .text-block {
-            text-align: right
+            text-align: right;
+            padding-right: 36px
+        }
+        .decor { 
+            background-position: 0 -20px ;
+            margin-right: auto;
+        }
+        .circles {
+            margin-right: 21px;
         }
     }
 }
@@ -111,8 +157,7 @@
 }
 .why-box {
     display: flex; 
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-between; 
     padding-bottom: 84px;
     .text-place {
         max-width: 784px;
@@ -133,13 +178,16 @@
         font-size: 22px;
         font-family: "Roboto Bold Condensed";
         line-height: 74px;
+        margin-right: 100px;
+        flex-shrink: 0;
     }
 }
- 
+.benefits-outer {
+    padding: 0 30px;
+} 
 .nurse-pricing-container {
     max-width: 970px;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 auto; 
     padding-top: 68px;
 }
 #price-table th {
@@ -182,6 +230,15 @@ th {
     border-top: none;
 }
 
-td:first-child, th:first-child {
+ th:first-child {
      border-left: none;
+     width: 178px;
+}
+ th:nth-child(2){ 
+    width: 222px;
+}  
+@media only screen and (max-width: 1420px)  {
+    .how-it-works { 
+        max-width: 100%
+    }
 }
