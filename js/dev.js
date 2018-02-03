@@ -1,14 +1,11 @@
 /**
  *
  * author: Tigran Harutyunyan.
- * 2016.
+ * 2018.
  **/
 
-$(window).on('resize', function() {
-   
-    var yourNurses = {};
-    var _widthBreakpoint = $(window).width();
-    yourNurses.topOffset = _widthBreakpoint > 690 ? -98 : -64;
+$(window).on('resize', function() { 
+    var yourNurses = {}; 
     var _videoPopup = $('.video-modal');
     _videoPopup.css({ 'margin-top': -_videoPopup.height() / 2 });
 });
@@ -18,20 +15,10 @@ var swiperPopupStaffer, swiperPopupNurses;
 $(document).ready(function() {
     var _height = $('#main-slider').height();
     var sliderInitCount = 0,
-        slider2InitCount = 0;
+        slider2InitCount = 0; 
 
-    var activePopupSliderID;
-    $('.scrolling-content').css({ top: _height });
-
-    calculateVideoPopupPosition();
-
-    var termsPage = $('body').hasClass('terms-page');
-    var yourNurses = {};
-    var allowScrolling = true;
-    var _docWidth = $(window).width();
-   
-    
-   
+    calculateVideoPopupPosition(); 
+    var _docWidth = $(window).width(); 
 
     $(".contact-form").validate({
         rules: {
@@ -61,12 +48,8 @@ $(document).ready(function() {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
-    $('[data-remodal-id=modal]').remodal({ hashTracking: false });
- 
-    function setSlideText() {
-        var active_text = $(activePopupSliderID).find('.swiper-slide-active').text();
-        $(activePopupSliderID).parent().parent().parent().find('.dynamic-caption').text(active_text);
-    }
+  
+  
     // ==================================================
     $('.hide-popup').click(function() {
         $('.responsive-menu').slideToggle('collapse');
@@ -83,34 +66,15 @@ $(document).ready(function() {
         $('.responsive-menu').slideToggle('expand')
     });
 
-    // ======= Hover effects in "How it works" section ===================
-    $('.sections').hover(handlerIn, handlerOut);
-    $('.how-to-works-list li').hover(handlerIn, handlerOut);
+ 
+   
     $("#closeVideoPopup").on("click", function() {
         $('#introVideo').get(0).pause();
     });
     $(".btnWatchVideo").on("click", function() {
         calculateVideoPopupPosition();
     });
-   
-    function handlerIn() {
-        var dataID = $(this).attr("data-id");
-        if (dataID < 8) {
-            $(".section" + dataID).addClass("hover-section");
-        } else {
-            $(".li-" + dataID).addClass('active-li');
-        }
-    }
-
-    function handlerOut() {
-        var dataID = $(this).attr("data-id");
-        if (dataID < 8) {
-            $(".section" + dataID).removeClass("hover-section");
-        } else {
-            $(".li-" + dataID).removeClass('active-li');
-        }
-    }
-
+ 
     function calculateVideoPopupPosition() {
         var _windowWidth = $(window).width();
         var _windowHeight = $(window).height();
