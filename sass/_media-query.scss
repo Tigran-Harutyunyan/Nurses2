@@ -16,6 +16,10 @@
 }
 
 @media only screen and (max-width: 1220px) {
+    .wis-home {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .footer .footer-inner {
         width: 100%;
         padding: 37px 30px
@@ -31,6 +35,9 @@
         .box {
             max-width: 27%;
         }
+    }
+    .banner-inner-section {
+        padding: 0 20px
     }
 }
 
@@ -49,6 +56,28 @@
 }
 
 @media only screen and (max-width: 1050px) {
+    .banner-inner-section {
+        .central-section p,
+        .home-decor-container {
+            display: none;
+            .graphic-layer {
+                justify-content: space-between;
+            }
+        }
+        .banner-par-tablet {
+            display: block;
+            padding-bottom: 23px
+        }
+        .central-section {
+            position: absolute;
+            left: 50%;
+            margin-left: -130px;
+            margin-top: 90px;
+        }
+        .graphic-layer {
+            justify-content: space-between
+        }
+    }
     .db2 {
         display: none;
     }
@@ -94,6 +123,44 @@
 }
 
 @media only screen and (max-width: 840px) {
+    .wis-home {
+        .vertical-element {
+            display: none
+        }
+        .boxes .box {
+            width: 340px;
+            padding: 0 10px;
+        }
+        .choices .heading-mediaum {
+            padding-bottom: 20px;
+        }
+        .boxes {
+            .box {
+                p,
+                a {
+                    font-size: 18px
+                }
+            }
+        }
+    }
+    .how-it-works-subsection {
+        padding-top: 43px;
+        padding-bottom: 50px;
+        .block {
+            width: 340px;
+        }
+    }
+    .how-it-works-subsection {
+        width: 100%
+    }
+    .video-container {
+        width: 100%;
+    }
+    .banner-inner-section {
+        .headings {
+            font-size: 48px
+        }
+    }
     .decoration-elems {
         display: none;
     }
@@ -207,6 +274,19 @@
 }
 
 @media only screen and (max-width: 730px) {
+    #toggleMobileMEnu{
+        display: block !important;
+        position: absolute;
+        top: 18px;
+        right:0;
+        z-index: 100;
+    }
+    .how-it-works-subsection {
+        flex-wrap: wrap;
+        .block {
+            margin: 0 auto
+        }
+    }
     .sidemenu {
         display: none
     }
@@ -252,6 +332,25 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .banner-inner-section {
+        .central-section {
+            display: none
+        }
+        .title-place {
+            flex-wrap: wrap;
+            .headings {
+                width: 100%
+            }
+            h5:last-of-type {
+                text-align: right;
+                padding-top: 10px;
+            }
+        }
+    }
+    .btn-tablet {
+        display: block !important;
+        margin: 50px auto 0;
+    }
     .nurse-pricing-container {
         text-align: center
     }
@@ -285,7 +384,63 @@
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) { 
+    .banner-inner-section {
+        .title-place {
+            padding-bottom: 15px;
+        }
+        .headings {
+            font-size: 36px;
+        }
+        .banner-par-tablet {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    } 
+    .wis-home  {
+        .choices .heading-mediaum{
+            padding-bottom: 16px;
+        }
+        .boxes {
+            .heading-mediaum {
+                font-size: 16px;
+                
+            }
+            .box {
+                p, a {
+                    font-size: 16px
+                }
+                p {
+                    line-height: 26px;
+                }
+                h4 {
+                    padding-top: 18px;
+                    padding-bottom: 11px;
+                }
+            }
+            
+        } 
+    } 
+    .circles {
+        width: 140px;
+        height: 140px;
+        .img1 {
+            width: 140px;
+            height: 140px;
+        }
+        .img2 {
+            width: 119px;
+            height: 119px;
+            top: 11px;
+            left: 11px;
+        }
+        .img3 {
+            width: 93px;
+            height: 93px;
+            top: 24px;
+            left: 24px;
+        }
+    }
     .footer .footer-inner {
         width: 100%;
         padding: 26px 20px 25px;
@@ -310,13 +465,28 @@
                 min-width: 260px
             }
         }
-       
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .how-it-works .step  .circles {
-        margin: 0 auto !important; 
+    #toggleMobileMEnu { 
+        top: 8px;
+    }
+    .overlay {
+        width: 100%
+    }
+    .wis-home .description {
+        font-size: 16px;
+    }
+    .banner-par-tablet {
+        padding-bottom: 0 !important;
+    }
+    .btn-tablet {
+        display: block !important;
+        margin: 0 auto; 
+    }
+    .how-it-works .step .circles {
+        margin: 0 auto !important;
     }
     #price-table {
         margin-top: 33px;
@@ -334,7 +504,7 @@
     .what-is-yournurses {
         padding-top: 37px;
         padding-bottom: 60px;
-    } 
+    }
     .why-container {
         padding: 35px 20px 0;
         .counter {
@@ -348,7 +518,6 @@
         font-size: 16px;
         padding-bottom: 48px !important;
     }
-     
     .why-box {
         padding-bottom: 30px;
         .text-place .heading-mediaum {
@@ -371,8 +540,8 @@
             }
             .text-block {
                 max-width: 100%;
-                padding-left:  20px !important;
-                padding-right:  20px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
                 margin-left: 0 !important;
             }
             .circles {

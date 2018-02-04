@@ -4,8 +4,8 @@
  * 2018.
  **/
 
-$(window).on('resize', function() { 
-    var yourNurses = {}; 
+$(window).on('resize', function() {
+    var yourNurses = {};
     var _videoPopup = $('.video-modal');
     _videoPopup.css({ 'margin-top': -_videoPopup.height() / 2 });
 });
@@ -15,10 +15,10 @@ var swiperPopupStaffer, swiperPopupNurses;
 $(document).ready(function() {
     var _height = $('#main-slider').height();
     var sliderInitCount = 0,
-        slider2InitCount = 0; 
+        slider2InitCount = 0;
 
-    calculateVideoPopupPosition(); 
-    var _docWidth = $(window).width(); 
+    calculateVideoPopupPosition();
+    var _docWidth = $(window).width();
 
     $(".contact-form").validate({
         rules: {
@@ -29,6 +29,18 @@ $(document).ready(function() {
         submitHandler: function() {
             toastr.success('The form has been  successfully submited.')
         }
+    });
+    // ============= MOBILE DROPDOWN =================
+    $('#toggleMobileMEnu').click(function() {
+        $(this).toggleClass('is-active');
+        $('#overlay').toggleClass('open');
+        $('.switcher1').toggleClass('hide-me');
+    });
+
+    $('.overlay-menu a').click(function() {
+        $('#toggleMobileMEnu').toggleClass('is-active');
+        $('#overlay').toggleClass('open');
+        $('.switcher1').toggleClass('hide-me');
     });
 
     toastr.options = {
@@ -48,8 +60,8 @@ $(document).ready(function() {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
-  
-  
+
+
     // ==================================================
     $('.hide-popup').click(function() {
         $('.responsive-menu').slideToggle('collapse');
@@ -62,19 +74,19 @@ $(document).ready(function() {
     $('.responsive-menu a').on('click', function() {
         $('.responsive-menu').slideToggle('collapse');
     })
-    $('.menu-btn').click(function() { 
+    $('.menu-btn').click(function() {
         $('.responsive-menu').slideToggle('expand')
     });
 
- 
-   
+
+
     $("#closeVideoPopup").on("click", function() {
         $('#introVideo').get(0).pause();
     });
     $(".btnWatchVideo").on("click", function() {
         calculateVideoPopupPosition();
     });
- 
+
     function calculateVideoPopupPosition() {
         var _windowWidth = $(window).width();
         var _windowHeight = $(window).height();

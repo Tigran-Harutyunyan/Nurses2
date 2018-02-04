@@ -18,7 +18,7 @@
     .graphic-layer {
         display: flex;
         .img-1 {
-            height: 270px
+            height: 304px
         }
         .img-2 {
             height: 285px;
@@ -35,7 +35,9 @@
         padding-bottom: 56px;
     }
 }
-
+.btn-tablet  {
+    display: none !important
+}
 .gradiented-btn {
     background-image: -moz-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
     background-image: -webkit-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
@@ -53,7 +55,30 @@
     line-height: 48px;
     font-family: 'roboto-condensed', sans-serif;
 }
-
+.decoration-elems .horizontal-lines {
+    background-image: url(/img/decor-horizontal.png);
+    margin-top: 48px;
+    width: 112px;
+    height: 2px
+}
+.home-decor-container {
+    width: 346px;
+    display: flex;
+    margin: 0 auto
+}
+.banner-par-tablet {
+    display: none
+}
+.banner-inner-section {
+    .decoration-elems { 
+        margin-top: 28px;
+    }
+}
+.home.decor-container {
+    display: flex;
+    width: 346px;
+    margin: 0 auto;
+}
 .how-it-works-subsection {
     display: flex;
     justify-content: space-between;
@@ -170,14 +195,14 @@
         background: #e2f2f9;
         width: 180px;
         height: 180px;
-        top: 16px;
-        left: 16px;
+        top: 15px;
+        left: 15px;
     }
     .img3 {
         width: 140px;
         height: 140px;
-        top: 36px;
-        left: 36px;
+        top: 35px;
+        left: 35px;
         background: url(/img/guy.svg);
         background-color: #a0d2e0;
         background-position: -13px 18px;

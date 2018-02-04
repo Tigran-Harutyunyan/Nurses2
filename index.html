@@ -7,7 +7,7 @@
     <title>Your Nurses | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Your Nurses">
-    <meta name="author" content="Your Nurses"> 
+    <meta name="author" content="Your Nurses">
     <link rel="shortcut icon" href="img/favicon_32px.png">
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="css/mediaelementplayer.css" /> -->
@@ -18,13 +18,47 @@
         <nav class="nav-bar">
             <div class="logo-place"> </div>
             <ul class="nav sidemenu">
-                <li><a class="menu-item">Home</a></li>
+                <li><a class="menu-item active-link">Home</a></li>
                 <li><a class="menu-item">Download</a></li>
                 <li><a class="menu-item" href="staffers.html">For staffers</a></li>
                 <li><a class="menu-item" href="nurses.html">For nurses</a></li>
                 <li><a class="menu-item" href="about.html">About</a></li>
             </ul>
         </nav>
+        <!--MOBILE DROPDOWN-->
+        <button class="hamburger hamburger--collapse" id="toggleMobileMEnu" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+            
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li>
+                        <a class="menu-item active-link" href="javascript:void">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#services">Download</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="staffers.html">For staffers</a></li>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="nurses.html">For nurses</a></li>
+                    </li>
+                    <li>
+                        <a class="menu-item"  href="about.html">About</a>
+                    </li>
+                </ul>
+                <div class="social-icons ">
+                    <a href="https://www.facebook.com/Core-Fireplace-Grills-256417668217459/?modal=admin_todo_tour" target="_blank" class="fb-link"></a>
+                    <a href="https://www.instagram.com/corefireplace/" target="_blank" class="tw-link"></a>
+                    <a href="https://www.yelp.com/biz/core-fireplace-and-grills-san-fernando?osq=corefireplaces" target="_blank" class="in-link"></a>
+                </div>
+            </nav>
+        </div>
+        <!--MOBILE DROPDOWN-->
     </header>
 
     <div class="main-section container">
@@ -35,20 +69,29 @@
                         <h5 class="headings">Be in demand</h5>
                         <h5 class="headings">Hire on demand</h5>
                     </div>
+                    <p class="banner-par-tablet">Did you know that connection is key to happiness? <br> How about seamless connection between staffers and nurses?
+                    </p>
                     <div class="graphic-layer">
-                        <img class="img-1" src="img/img1.svg" alt="">
+                        <img class="img-1" src="img/img1.svg">
                         <div class="central-section">
                             <p>Did you know that connection is key to happiness? <br> How about seamless connection between staffers and nurses?
                             </p>
                             <a href="javascript:void" class="gradiented-btn">download</a>
+                            <div class="decoration-elems">
+                                <div class="home-decor-container">
+                                    <div class="horizontal-lines left-line"></div>
+                                    <img src="img/logo-banner.svg">
+                                    <div class="horizontal-lines right-line"></div>
+                                </div>
+                            </div>
                         </div>
                         <img class="img-2" src="img/img2.svg" alt="">
                     </div>
+                    <a href="javascript:void" class="gradiented-btn btn-tablet">download</a>
                 </div>
-
             </div>
         </section>
-        <section class="what-is-yournurses">
+        <section class="what-is-yournurses wis-home">
             <div class="inner-container">
                 <h1 class="heading">What is YourNurses?</h1>
                 <p class="description">
@@ -137,7 +180,7 @@
                 </div>
             </div>
         </footer>
-    </div> 
+    </div>
     <div class="remodal  video-modal" data-remodal-id="modal-video" data-remodal-options="hashTracking: false">
         <div class="remodal-close" data-remodal-action="close" id="closeVideoPopup">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">

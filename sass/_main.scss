@@ -6,18 +6,15 @@ $color1: #d7ecf7;
 .roboto-light {
     font-family: 'roboto-light', sans-serif;
 }
-
-.sprite2 {
-    background-image: url("../img/sprite-2.svg");
-    background-size: 1023px 535px;
-}
-
+ 
 html,
 body {
     height: 100%
 }
-
-menu- body {
+* {
+    box-sizing: border-box
+}
+menu, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -248,6 +245,9 @@ Navigation
         }
     }
 }
+.nav a.active-link {
+    color: #38bbd7;
+}
 
 .menu-btn {
     position: absolute;
@@ -289,70 +289,133 @@ Navigation
 .mobile-nav {
     display: none;
 }
-
-.responsive-menu {
-    display: none;
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+  
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+.overlay {
     position: fixed;
+    top: 0; 
+    width: 330px;
+    opacity: 1;
+    visibility: hidden; 
+    height: 1024px;
+    z-index: 50;
     right: 0;
-    top: 0;
-    font-size: 22px;
-    border-top: #f2f2f2 solid 1px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    background: #fff;
-    z-index: 101;
-    .remodal-close {
-        right: 20px;
-        top: 20px
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12); 
+    padding-top: 52px;
+    .call-us-block {
+        opacity: 0
     }
-    li:first-child a {
-        padding-top: 57px;
-    }
-    li:last-child a {
-        padding-bottom: 51px;
-    }
-    .menu-item.active-link {
-        color: #4dbfd7;
-    }
-    a {
-        text-transform: uppercase;
-        box-sizing: border-box;
-        font-size: 16px;
-        padding: 10px;
-        line-height: 32px;
-        width: 100%;
-        text-align: center;
-        display: block;
-        cursor: pointer;
-        font-family: 'roboto-condensed', sans-serif;
-    }
-    .menu-header {
-        display: block;
-        ul {
-            background: #fff;
+    &.open {
+        .call-us-block {
+            margin: 361px auto 72px;
             position: relative;
-            display: block;
+            width: 136px;
+            transition: opacity 0.2s linear 0.9s;
+            opacity: 1;
+        }
+        .callus-ico {
+            margin-right: 11px
+        }
+        .callus-ico,
+        .callButton {
+            display: inline-block !important
+        }
+        opacity: 1;
+        visibility: visible;
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
         }
         li {
-            background: #fff;
-            float: none;
-            line-height: 55px;
-            width: 100%;
-            text-align: center;
-            border-bottom: #EDEDED solid 1px;
-            position: relative;
-            padding: 0;
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .15s;
+            &:nth-of-type(2) {
+                animation-delay: .25s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: .35s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: .45s;
+            }
+            &:nth-of-type(5) {
+                animation-delay: .55s;
+            }
+            &:nth-of-type(6) {
+                animation-delay: .65s;
+            }
+            &:nth-of-type(7) {
+                animation-delay: .75s;
+            }
+            &:nth-of-type(8) {
+                animation-delay: .85s;
+            }
         }
-        a {
-            color: #989DA1;
-            text-decoration: none;
-            text-transform: uppercase;
+    }
+    nav {
+        position: relative;
+        height: 0;
+        padding-top: 67px;
+        transform: translateY(-50%);
+        text-align: center;
+        z-index: 100;
+        ul {
+            float: left;
+            padding-left: 80px;
+            li {
+                display: flex;
+                min-height: 47px;
+                position: relative;
+                opacity: 0;
+                //justify-content: center; // is used if you need to center the menu elements
+                span {
+                    font-size: 18px
+                }
+                a {
+                    display: block;
+                    position: relative;
+                    color: #8d9fa0;
+                    font-family: "Roboto Bold Condensed", sans-serif;
+                    font-size: 18px;
+                    text-decoration: none;
+                    overflow: hidden;
+                    text-transform: uppercase;
+                    padding-bottom: 32px;
+                    line-height: 20px; 
+                }
+                .active-link {
+                    color: $color1;
+                    span {
+                        display: inline-block
+                    }
+                    span:first-child {
+                        margin-right: 10px
+                    }
+                    span:last-child {
+                        margin-left: 10px
+                    }
+                }
+            }
         }
     }
 }
-
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-image: url(/img/burger-item.png);
+    width: 30px; 
+}
+ 
 .logo-place {
     width: 143px;
     height: 65px;
@@ -457,47 +520,7 @@ Navigation
     margin-left: 36px;
 }
 
-#scroller {
-    position: fixed;
-    right: 136px;
-    bottom: 130px;
-    cursor: pointer;
-    display: none;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    z-index: 10;
-    .st0 {
-        fill: #4DBFD7;
-    }
-    .normal {
-        opacity: 1
-    }
-    .normal,
-    .hovered {
-        transition: 0.3s all linear;
-    }
-    .hovered {
-        display: none;
-        opacity: 0;
-        .st0 {
-            fill: #4DBFD7;
-        }
-        .st1 {
-            fill: #FFFFFF;
-        }
-    }
-    &:hover {
-        .normal {
-            display: none;
-            opacity: 0
-        }
-        .hovered {
-            display: block;
-            opacity: 1
-        }
-    }
-}
-
+ 
 .default-inp-row {
     position: relative;
 }
@@ -545,147 +568,7 @@ Navigation
         color: white;
     }
 }
-
-.download-section {
-    border: 1px solid #e6e6e6;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 100%;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    .left-section,
-    .middle-section,
-    .right-section {
-        webkit-flex: 0 0 auto;
-        -moz-flex: 0 0 auto;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-        height: 100%
-    }
-    .left-section {
-        margin-right: 138px;
-        .download-icon {
-            background-position: -571px -77px;
-        }
-        .buttons {
-            float: right;
-        }
-    }
-    .right-section {
-        margin-left: 138px;
-        .download-icon {
-            background-position: -540px -77px;
-        }
-        .buttons {
-            float: left;
-        }
-    }
-    .middle-section {
-        padding-top: 21px;
-        width: 290px;
-        text-align: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        h5 {
-            color: #404040;
-            font-size: 18px;
-            font-family: 'roboto-condensed', sans-serif;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-            width: 100%;
-        }
-        p {
-            color: #8d9fa0;
-            font-size: 14px;
-            font-family: 'roboto-light', sans-serif;
-            width: 100%;
-        }
-    }
-}
- 
- 
-
-.logo-place2 {
-    background-image: url("../img/sprite-2.svg");
-    cursor: pointer;
-    background-size: 1023px 535px;
-    background-repeat: no-repeat;
-    background-position: -881px -8px;
-    margin-bottom: 5px;
-    width: 32px;
-    height: 39px;
-}
-
-.info-place-container {
-    border-bottom: 1px solid #e6e6e6;
-    background: url("../img/hands-care.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 104px;
-    >p {
-        width: 66%;
-        color: #8d9fa0;
-        font-size: 16px;
-        text-align: center;
-        line-height: 26px;
-        margin: 26px auto 19px;
-        margin-bottom: 26px;
-        font-family: 'roboto-light', sans-serif;
-        max-width: 1050px;
-    }
-    .p4 {
-        color: #4dbfd7;
-        font-size: 22px;
-        font-family: 'roboto-condensed', sans-serif;
-        margin: 0 auto;
-        text-transform: uppercase;
-    }
-    .p5 {
-        color: #404040;
-        font-size: 14px;
-        margin: 10px auto;
-        max-width: 346px;
-        line-height: 17px;
-        font-family: 'roboto-light', sans-serif;
-    }
-    .title-place {
-        font-family: 'roboto-condensed', sans-serif;
-        text-align: center;
-        font-size: 30px;
-        text-transform: uppercase;
-        margin: 52px auto 58px;
-        a {
-            color: #4dbfd7;
-            font-size: 30px;
-            margin-bottom: 6px;
-            display: block;
-        }
-        h5 {
-            color: #404040;
-        }
-        .logo-place2 {
-            margin: 0 auto 5px;
-        }
-    }
-}
-
+  
 .contact-section-container {
     padding-bottom: 94px;
     .title-place {
@@ -941,7 +824,9 @@ Navigation
     max-width: 100%;
     height: auto;
 }
-
+.responsive-menu {
+    display: none
+}
 .remodal.video-modal {
     max-width: 1024px;
     padding-left: 0;
