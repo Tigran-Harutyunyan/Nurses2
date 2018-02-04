@@ -53,6 +53,10 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+    .section-about.what-is-yournurses {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -153,7 +157,7 @@
     .how-it-works-subsection {
         width: 100%
     }
-    .video-container {
+    .video-container, .video-cover  {
         width: 100%;
     }
     .banner-inner-section {
@@ -174,10 +178,22 @@
 }
 
 @media only screen and (max-width: 780px) {
+    .section-about.what-is-yournurses {
+        padding-top: 63px;
+    }
+    .about-heading {
+        font-size: 56px !important
+    }
     .logo-place {
         width: 133px;
         height: 61px;
         margin-top: 15px;
+    }
+    .about-text-container { 
+        padding-top: 41px;
+          .normal-paragraph {
+            padding-bottom: 30px;
+          }
     }
     .what-is-yournurses {
         .horizontal-element {
@@ -469,6 +485,20 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .footer-logo { 
+        margin-right: 20px;
+    }
+    .section-about.what-is-yournurses {
+        padding-top: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-text-container {
+        padding-top: 30px;
+    }
+    .about-heading {
+        font-size: 36px !important;
+    }
     #toggleMobileMEnu { 
         top: 8px;
     }

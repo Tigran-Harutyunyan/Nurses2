@@ -59,10 +59,15 @@ $(document).ready(function() {
         "hideEasing": "linear",
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
-    }
-
+    } 
 
     // ==================================================
+
+    $('.play-btn').click(function() { // play video
+        $('.video-cover').hide();
+        $('#introVideo').get(0).play();
+    })
+
     $('.hide-popup').click(function() {
         $('.responsive-menu').slideToggle('collapse');
     })
