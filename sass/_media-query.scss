@@ -16,6 +16,10 @@
 }
 
 @media only screen and (max-width: 1220px) {
+    .logo-place {
+        margin-left: 20px;
+        transition: none;
+    }
     .wis-home {
         padding-left: 30px;
         padding-right: 30px;
@@ -602,6 +606,19 @@
         p {
             font-size: 16px;
             padding-top: 5px;
+        }
+    }
+}
+@media only screen and (max-width: 380px) {  
+    .wis-home {
+        .horizontal-element {
+            width: 100% 
+        }
+        .boxes{
+            flex-wrap: wrap;
+            .box {
+                width: 100%; 
+            } 
         }
     }
 }
