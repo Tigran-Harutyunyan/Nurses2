@@ -262,6 +262,11 @@ Navigation
         margin: 0;
         margin-right: 2px
     }
+    li:last-child {
+        a {
+            padding-right: 0;
+        }
+    }
     a {
         display: block;
         font-family: 'roboto-condensed', sans-serif;
@@ -476,8 +481,7 @@ Navigation
     width: 143px;
     height: 65px;
     float: left;
-    margin-top: 15px;
-    margin-left: 20px;
+    margin-top: 15px; 
     background: url('/img/logo-svg.svg') no-repeat;
 }
 

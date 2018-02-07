@@ -82,7 +82,7 @@ $(document).ready(function() {
     $('.menu-btn').click(function() {
         $('.responsive-menu').slideToggle('expand')
     });
-
+    $('[data-remodal-id=modal]').remodal({ hashTracking: false });
 
 
     $("#closeVideoPopup").on("click", function() {
