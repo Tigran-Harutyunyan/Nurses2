@@ -16,6 +16,8 @@
         padding: 0 20px 54px;
     }
     .graphic-layer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         .img-1 {
             height: 304px
@@ -30,18 +32,22 @@
     }
     .title-place {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding-bottom: 56px;
     }
 }
-.btn-tablet  {
+
+.btn-tablet {
     display: none !important
 }
+
 .gradiented-btn {
-    background-image: -moz-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
-    background-image: -webkit-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
-    background-image: -ms-linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgb(56, 157, 215)), to(rgb(56, 187, 215)));
     background-image: linear-gradient( 180deg, rgb(56, 157, 215) 0%, rgb(56, 187, 215) 100%);
     text-transform: uppercase;
     line-height: 1.2;
@@ -56,32 +62,46 @@
     font-family: 'roboto-condensed', sans-serif;
     cursor: pointer
 }
+
 .decoration-elems .horizontal-lines {
     background-image: url(/img/decor-horizontal.png);
     margin-top: 48px;
     width: 112px;
     height: 2px
 }
+
 .home-decor-container {
     width: 346px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto
 }
+
 .banner-par-tablet {
     display: none
 }
+
 .banner-inner-section {
-    .decoration-elems { 
+    .decoration-elems {
         margin-top: 28px;
     }
 }
+
 .home.decor-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 346px;
     margin: 0 auto;
 }
+
 .how-it-works-subsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
     padding-top: 77px;
@@ -139,7 +159,11 @@
     }
     .boxes {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         position: relative;
         .box {
@@ -206,13 +230,78 @@
         left: 35px;
         background: url(/img/guy.svg);
         background-color: #a0d2e0;
-        background-position: -13px 18px;
+        background-position: 2px 6px;
         background-repeat: no-repeat;
-        background-size: 161%;
+        background-size: 100%;
     }
     .img3.girl {
         background-image: url(/img/girl.svg);
         background-size: 73%;
         background-position: 0px 16px;
+    }
+}
+
+.app-links-container {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 570px;
+    margin: 0 auto 165px;
+    .ios-link-popup,
+    .android-link-popup {
+        background-repeat: no-repeat;
+        width: 202px;
+        height: 61px;
+        float: left;
+    }
+    .android-link-popup {
+        background-position: 0 0;
+        background-image: url(../../img/android.svg);
+    }
+    .ios-link-popup {
+        background-image: url(../../img/ios.svg);
+        margin-bottom: 20px;
+    }
+}
+
+.app-block {
+    width: 210px;
+    text-align: center;
+    h5 {
+        font-family: 'roboto-condensed', sans-serif;
+        color: #38bbd7;
+        font-size: 26px;
+        padding-top: 37px;
+        padding-bottom: 26px;
+    }
+    img {
+        width: 120px;
+        margin: 0 auto
+    }
+}
+
+.terms-section {
+    .normal-paragraph {
+        text-align: left;
+    }
+    ul {
+        color: #8d9fa0;
+        line-height: 30px;
+        font-size: 20px;
+        font-family: 'roboto-condensed';
+        text-align: left; 
+        padding-bottom: 42px;
+    }
+    h2 {
+        color: #38bbd7;
+        font-size: 26px;
+        font-family: 'roboto-condensed';
+        text-align: left;
+        padding-bottom: 4px;
     }
 }

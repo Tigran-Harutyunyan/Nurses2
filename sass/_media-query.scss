@@ -16,11 +16,15 @@
 }
 
 @media only screen and (max-width: 1220px) {
+    .benefits-outer {
+        padding: 0 30px;
+    } 
     .nav.sidemenu {
         margin-right: 20px;
     }
     .logo-place {
         margin-left: 20px;
+        -webkit-transition: none;
         transition: none;
     }
     .wis-home {
@@ -40,7 +44,7 @@
     }
     .benefit-boxes {
         .box {
-            max-width: 27%;
+            max-width: 30%;
         }
     }
     .banner-inner-section {
@@ -72,6 +76,8 @@
         .home-decor-container {
             display: none;
             .graphic-layer {
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 justify-content: space-between;
             }
         }
@@ -86,6 +92,8 @@
             margin-top: 90px;
         }
         .graphic-layer {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between
         }
     }
@@ -99,9 +107,12 @@
     .footer .info-block {
         width: 100%;
         padding-top: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .footer-inner {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding-bottom: 39px;
         .footer-right {
@@ -164,7 +175,8 @@
     .how-it-works-subsection {
         width: 100%
     }
-    .video-container, .video-cover  {
+    .video-container,
+    .video-cover {
         width: 100%;
     }
     .banner-inner-section {
@@ -185,8 +197,18 @@
 }
 
 @media only screen and (max-width: 780px) {
+    .what-is-yournurses.terms-section {
+        .horizontal-element {
+            margin: 50px auto 0 !important;
+        }
+        ul {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
     .section-about.what-is-yournurses {
         padding-top: 63px;
+        padding-bottom: 87px;
     }
     .about-heading {
         font-size: 56px !important
@@ -196,11 +218,11 @@
         height: 61px;
         margin-top: 15px;
     }
-    .about-text-container { 
+    .about-text-container {
         padding-top: 41px;
-          .normal-paragraph {
+        .normal-paragraph {
             padding-bottom: 30px;
-          }
+        }
     }
     .what-is-yournurses {
         .horizontal-element {
@@ -209,7 +231,7 @@
             width: 307px;
         }
         .horizontal-element.line1 {
-            margin: 29px auto 55px;
+            margin: 81px auto 52px;
         }
     }
     .nav a {
@@ -237,10 +259,12 @@
         padding: 35px 35px 60px;
     }
     .benefit-boxes {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         .box {
-            max-width: 48%;
+            max-width: 45%;
             margin-bottom: 40px;
         }
         .box:last-child {
@@ -297,14 +321,15 @@
 }
 
 @media only screen and (max-width: 730px) {
-    #toggleMobileMEnu{
+    #toggleMobileMEnu {
         display: block !important;
         position: absolute;
         top: 18px;
-        right:0;
+        right: 0;
         z-index: 100;
     }
     .how-it-works-subsection {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         .block {
             margin: 0 auto
@@ -317,6 +342,7 @@
         display: block
     }
     .nurse-top-section {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         .right-block {
             .headings,
@@ -355,11 +381,15 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .app-links-container {
+        width: 450px;
+    }
     .banner-inner-section {
         .central-section {
             display: none
         }
         .title-place {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             .headings {
                 width: 100%
@@ -391,7 +421,11 @@
     .how-it-works {
         width: 340px;
         .step {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
             .text-block {
                 max-width: 340px;
@@ -401,13 +435,17 @@
             }
         }
         .step:nth-child(even) {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
         }
     }
 }
 
-@media only screen and (max-width: 580px) { 
+@media only screen and (max-width: 580px) {
     .banner-inner-section {
         .title-place {
             padding-bottom: 15px;
@@ -419,18 +457,18 @@
             padding-left: 0;
             padding-right: 0;
         }
-    } 
-    .wis-home  {
-        .choices .heading-mediaum{
+    }
+    .wis-home {
+        .choices .heading-mediaum {
             padding-bottom: 16px;
         }
         .boxes {
             .heading-mediaum {
                 font-size: 16px;
-                
             }
             .box {
-                p, a {
+                p,
+                a {
                     font-size: 16px
                 }
                 p {
@@ -441,9 +479,8 @@
                     padding-bottom: 11px;
                 }
             }
-            
-        } 
-    } 
+        }
+    }
     .circles {
         width: 140px;
         height: 140px;
@@ -469,6 +506,7 @@
         padding: 26px 20px 25px;
     }
     .info-block {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .footer-left {
@@ -491,14 +529,44 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .footer-logo { 
+@media only screen and (max-width: 510px) {
+    .app-links-container {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 202px;
+        margin: 0 auto 31px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        .app-block:last-child {
+            margin-bottom: 60px
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    .terms-section h2 {
+        font-size: 20px
+    }
+    .what-is-yournurses.terms-section {
+        .horizontal-element {
+            margin: 10px auto 22px !important;
+        }
+        ul {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 29px;
+        }
+    }
+    .footer-logo {
         margin-right: 20px;
     }
     .section-about.what-is-yournurses {
         padding-top: 45px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 38px;
     }
     .about-text-container {
         padding-top: 30px;
@@ -506,7 +574,7 @@
     .about-heading {
         font-size: 36px !important;
     }
-    #toggleMobileMEnu { 
+    #toggleMobileMEnu {
         top: 8px;
     }
     .overlay {
@@ -520,7 +588,7 @@
     }
     .btn-tablet {
         display: block !important;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
     .how-it-works .step .circles {
         margin: 0 auto !important;
@@ -612,16 +680,36 @@
         }
     }
 }
-@media only screen and (max-width: 380px) {  
+
+@media only screen and (max-width: 380px) {
+    .section-banner p {
+        padding: 5px 0 60px
+    }
+    .nurse-top-section .right-block {
+        padding-top: 83px;
+    }
+    .nurse-top-section .graphic-layer .img-1 {
+        height: 345px
+    }
+    .nurse-top-section .graphic-layer.banner-image-nurse .img-1 {
+        height: 275px;
+    }
     .wis-home {
         .horizontal-element {
-            width: 100% 
+            width: 100%
         }
-        .boxes{
+        .boxes {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             .box {
-                width: 100%; 
-            } 
+                width: 100%;
+            }
         }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #price-table {
+        width: 296px;
     }
 }
